@@ -1,0 +1,16 @@
+[Coordinates]
+x_coord = 125
+y_coord = 1008
+x_coord_center = 800
+y_coord_center = 550
+geometry_x = 1487
+geometry_y = 563
+geometry_size_x = 433
+geometry_size_y = 445
+
+
+[old]
+geometry_x = 1587
+geometry_y = 563
+geometry_size_x = 333
+geometry_size_y = 445
