@@ -10,9 +10,6 @@ from config import read_config
 x_coord, y_coord, x_coord_center, y_coord_center, geometry_x, geometry_y, geometry_size_x, geometry_size_y = read_config()
 
 from imageLabel import ImageLabel
-
-image_files = ['imgs/a-1.png','imgs/b-1.png','imgs/b-2.png']  # Example list, replace with your list
-
 from getImages import getImages
 
 znaki = getImages('imgs/')
@@ -60,14 +57,15 @@ class MainWindow(QMainWindow):
         button_layout = QHBoxLayout()
         main_layout.addLayout(button_layout)
 
-        button_texts = ["A", "B", "C", "D", "E", "F", "Linie", "Inne"]
+        button_texts = ["A", "B", "C", "D", "E", "F", "Linie",'Duże', "Inne"]
         button_functions = {
             "A": lambda: on_button_a_clicked(grid_layout, znaki['a']),
             "B": lambda: on_button_a_clicked(grid_layout, znaki['b']),
-            "C": lambda: on_button_a_clicked(grid_layout, 'C'),
-            "D": lambda: on_button_a_clicked(grid_layout, 'D'),
+            "C": lambda: on_button_a_clicked(grid_layout, znaki['c']),
+            "D": lambda: on_button_a_clicked(grid_layout, znaki['d']),
             "E": lambda: on_button_a_clicked(grid_layout, 'E'),
             "F": lambda: on_button_a_clicked(grid_layout, 'F'),
+            "Duże": lambda: on_button_a_clicked(grid_layout, 'Duże'),
             "Linie": lambda: on_button_a_clicked(grid_layout, 'Linie'),
             "Inne": lambda: on_button_a_clicked(grid_layout, 'Inne')
         }
